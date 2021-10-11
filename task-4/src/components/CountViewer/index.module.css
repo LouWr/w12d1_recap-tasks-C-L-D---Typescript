@@ -1,0 +1,18 @@
+.count {
+  animation-name: fade-in;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  font-weight: bold;
+  font-size: 8rem;
+}
+
+@keyframes fade-in {
+  from {
+    color: cornflowerblue;
+  }
+  to {
+    color: inherit;
+  }
+}

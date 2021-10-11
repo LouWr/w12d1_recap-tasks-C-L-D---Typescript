@@ -1,0 +1,46 @@
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr;
+  grid-template-areas:
+    "header"
+    "main";
+}
+
+.heading {
+  margin: 1rem 0;
+  grid-area: header;
+}
+
+.headingText {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 2rem;
+  letter-spacing: 0.3em;
+}
+
+.main {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.incrementButton {
+  margin: auto;
+  padding: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  line-height: 1.5rem;
+  height: 4rem;
+  max-width: 500px;
+  background-color: cornflowerblue;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+}
