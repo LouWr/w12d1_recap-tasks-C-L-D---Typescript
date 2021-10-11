@@ -2,9 +2,10 @@ import React, { useState } from "react";
 import CountViewer from "../CountViewer";
 import classes from "./index.module.css";
 
-// type annotation for props
+// type annotation for props 
 type AppProps = {
 }
+
 
 const App = ({}:AppProps):JSX.Element => {
   const [count, setCount] = useState<number>(0);
