@@ -2,8 +2,12 @@ import React, { useState } from "react";
 import CountViewer from "../CountViewer";
 import classes from "./index.module.css";
 
-const App = () => {
-  const [count, setCount] = useState(0);
+// type annotation for props
+type AppProps = {
+}
+
+const App = ({}:AppProps):JSX.Element => {
+  const [count, setCount] = useState<number>(0);
 
   return (
     <div className={classes.container}>
@@ -14,7 +18,7 @@ const App = () => {
         <CountViewer count={count} />
         <button
           className={classes.incrementButton}
-          onClick={() => setCount((prev) => prev + 1)}
+          onClick={():void => setCount((prev) => prev + 1)}
         >
           ➕ Increment
         </button>

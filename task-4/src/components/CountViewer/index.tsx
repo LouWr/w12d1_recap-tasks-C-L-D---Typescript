@@ -1,8 +1,11 @@
 import classes from "./index.module.css";
 
 // Add type annotations for the CountViewer's props and return value.
+type CountViewerProps={
+  count:number;
+}
 
-const CountViewer = ({ count }) => {
+const CountViewer = ({ count }:CountViewerProps):JSX.Element => {
   if (0 === count) {
     return <p>Looks like you haven't started counting yet.</p>;
   }
